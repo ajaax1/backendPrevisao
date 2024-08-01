@@ -14,4 +14,4 @@ use App\Http\Controllers\ApiTempo;
 |
 */
 
-route::get('/dados/{cidade}',  [ApiTempo::class, 'api']);
+Route::get('/dados/{cidade}',  [ApiTempo::class, 'api']);
