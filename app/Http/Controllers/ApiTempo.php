@@ -11,7 +11,7 @@ class ApiTempo extends Controller
      */
     public function api($cidade)
     {
-        $apiKey = env('API_KEY');
+        $apiKey = env('KEY');
         $responseGeo = Http::get("http://api.openweathermap.org/geo/1.0/direct?q=$cidade&appid=$apiKey");
 
         if ($responseGeo->successful()) {
